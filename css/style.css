@@ -1,0 +1,73 @@
+.work-area {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.head-menu-bar {
+  background-color: #424242;
+}
+
+.head-menu {
+  height: 28px;
+}
+
+.head-menu li {
+  list-style: none;
+}
+
+.head-menu li a {
+  font-family: SegoeWP;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+}
+
+.head-main-bar {
+  height: 112px;
+  background-image: linear-gradient(to top, #ececec, #ffffff);
+}
+
+.logo {
+  width: 136px;
+  height: 74px;
+  margin: 21px 0 0 140px;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+}
+
+header .head-main-bar .work-area form fieldset {
+  width: 458px;
+  border-radius: 2px;
+  background-color: #8bb065;
+}
+
+#search-field {
+  width: 328px;
+  height: 33px;
+  margin-top: 4px;
+  margin-bottom: 3px;
+  margin-left: 5px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+#search-btn {
+  background-color: inherit;
+  cursor: pointer;
+  font-family: SegoeWPN;
+  font-size: 23px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
