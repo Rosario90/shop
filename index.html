@@ -3,15 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- 
   <link rel="stylesheet" href="css/reset.css">
+  -->
   <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--
   <link rel="stylesheet" href="css/style.css">
+  -->
   <title>Books Online&nbsp;&mdash; Main</title>
 </head>
 
 <body>
   <div class="container">
-    <header>
+    <header class="main-header">
       <div class="head-menu-bar">
         <div class="work-area">
           <ul class="head-menu">
@@ -25,22 +29,121 @@
       <div class="head-main-bar">
         <div class="work-area">
           <div class="logo">
-            <!--<a href="index.html"></a>--></div>
-          <form action="#">
+            <!--<a href="index.html"></a>-->
+          </div>
+          <form class="head-search" method="get" action="#">
             <fieldset>
               <input id="search-field" type="text">
               <button type="submit" id="search-btn" title="Search"><i class="fa fa-search" aria-hidden="true"></i>Search</button>
             </fieldset>
           </form>
+          <div class="cart-wrapper">
+            <div class="cart-top"> <i class="cart-icon"></i> <span class="your-cart">Your cart</span> <span class="items-qty">(2 items)</span> </div>
+            <div class="cart-bottom"> <span class="order-total">$125.0</span> <a class="btn-checkout" href="#">Checkout</a> </div>
+          </div>
+          <div class="wish-wrapper">
+            <div class="wish-top">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+              </span> 
+            </div>
+            <div class="wish-bottom">
+              <span class="wish-list">Wish list</span>
+              <div class="wish-qty">20</div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
-    <!--<h1>Books Online</h1>
-    <p>Welcome to&nbsp;our Bookstore! We&nbsp;are sure you&rsquo;ll find everything you need! Use our menu to&nbsp;navigate through our website. Enjoy!</p>--></div>
-  <!--<footer>
+    <div class="nav-bar">
+      <div class="work-area">
+        <nav class="top-categories">
+          <ul>
+            <li><a href="#">Computers</a></li>
+            <li><a href="#">Cooking</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Fiction</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">Mathematics</a></li>
+            <li><a href="#">Medical</a></li>
+            <li><a href="#">Reference</a></li>
+            <li><a href="#">Science</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="work-area">
+      <section class="promo">
+        <div class="slider"></div>
+        <div class="special-offer">
+          <h3>Deal of the Month</h3>
+          <p class="deal-description">
+            The Human Face of Big Data
+          </p>
+          <div class="special-offer-base"></div>
+          <img src="img/covers/The_Human_Face_of_Big_Data.jpg" alt="The Human Face of Big Data" title="The Human Face of Big Data">
+          <p class="deal-save">
+            Save 45% Today
+          </p>
+          <p class="deal-price">
+            $27.50
+          </p>
+          <a href="#" class="btn-buy-now">Buy now</a>
+        </div>
+      </section>
+      <nav class="side-categories">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">ALL</a></li>
+          <li>
+            <a href="#">Fiction &amp; Literature</a>
+            <ul>
+              <li><a href="#">Children</a></li>
+              <li><a href="#">Science Fiction</a></li>
+              <li><a href="#">Fantasy</a></li>
+              <li><a href="#">Mystery</a></li>
+              <li><a href="#">Romance</a></li>
+              <li><a href="#">Horror</a></li>
+              <li><a href="#">Poetry</a></li>
+              <li><a href="#">Literature</a></li>
+              <li><a href="#">Crime</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Non - Fiction</a>
+            <ul>
+              <li><a href="#">Comic</a></li>
+              <li><a href="#">Cook</a></li>
+              <li><a href="#">Psychology</a></li>
+              <li><a href="#">Medical</a></li>
+              <li><a href="#">Art</a></li>
+              <li><a href="#">Photography</a></li>
+              <li><a href="#">Law</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Computer</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Other</a>
+            <ul>
+              <li><a href="#">Baby</a></li>
+              <li><a href="#">Sex</a></li>
+              <li><a href="#">Travel</a></li>
+              <li><a href="#">Science</a></li>
+              <li><a href="#">Sports</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+    </div>
+  </div>
+  <footer>
     <p> We&nbsp;accept all major Credit Card/Debit Card/Internet Banking </p>
     <p> Conditions of&nbsp;Use Privacy Notice &copy;&nbsp;2012-2017, Booksonline, Inc.&nbsp;or&nbsp;its affiliates </p>
-  </footer>-->
+  </footer>
 </body>
 
 </html>
