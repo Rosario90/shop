@@ -1,37 +1,117 @@
+@font-face {
+  font-family: "SegoeWP-Bold";
+  src: url("../fonts/SegoeWP/SegoeWP-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SegoeWP-Light";
+  src: url("../fonts/SegoeWP/SegoeWP-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SegoeWP-Regular";
+  src: url("../fonts/SegoeWP/SegoeWP-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SimploCapsDEMO-Regular";
+  src: url("../fonts/SimploCapsDEMO/SimploCapsDEMO-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* F I X E D  W I D T H */
 .work-area {
   width: 1280px;
   margin: 0 auto;
 }
 
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
 .head-menu-bar {
-  background-color: #424242;
+  background-color: #444;
 }
 
-.head-menu {
-  height: 28px;
+nav.head-menu ul {
+  float: right;
+  margin-right: 150px;
 }
 
-.head-menu li {
-  list-style: none;
+nav.head-menu ul li {
+  display: inline-block;
+  margin-left: 20px;
 }
 
-.head-menu li a {
-  font-family: SegoeWP;
+nav.head-menu ul li a {
+  font-family: "SegoeWP-Light", "Arial", Sans-serif;
+  color:  #ddd;
   font-size: 16px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.63;
-  letter-spacing: normal;
-  text-decoration: none;
+  line-height: 26px;
   text-align: center;
-  color: #ffffff;
+  text-decoration: none;
+}
+
+nav.head-menu ul li a:hover, nav.head-menu ul li a:active {
+  color: #fff;
 }
 
 .head-main-bar {
   height: 112px;
   background-image: linear-gradient(to top, #ececec, #ffffff);
 }
+
+a.logo {
+  display: inline-block;
+  width: 136px;
+  height: 73px;
+  background-image: url("../img/logo.png"); 
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+
+
+a.logo span.books-logo {
+  display: block;
+  float: left;
+  margin: 19px 0 0 18px;
+  font-family: "SimploCapsDEMO-Regular", "Arial", Sans-serif;
+  font-size: 28px;
+  font-stretch: normal;
+  line-height: 0.93;
+  letter-spacing: normal;
+  color: #fff;
+  text-align: left;
+}
+
+a.logo span.online-logo {
+  display: block;
+  margin-top: 119px;
+  font-family: "SimploCapsDEMO-Regular", "Arial", Sans-serif;
+  color:  #5b5b5b;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  -webkit-transform: rotate(-90deg);
+}
+/*
+
+
+
+
+
+
 
 .logo {
   width: 136px;
@@ -71,3 +151,4 @@ header .head-main-bar .work-area form fieldset {
   color: #ffffff;
 }
 
+*/
