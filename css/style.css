@@ -16,6 +16,7 @@
   font-weight: normal;
   font-style: normal;
 }
+/* Шрифт немножко не совсем тот, как на макете, надо поискать получше*/
 @font-face {
   font-family: "SimploCapsDEMO-Regular";
   src: url("../fonts/SimploCapsDEMO/SimploCapsDEMO-Regular.otf") format("opentype");
@@ -83,16 +84,19 @@ a.logo {
 a.logo span.books-logo {
   display: block;
   float: left;
-  padding-top: 19px;
-  padding-left: 18px;
-  width: 96px;
-  height: 54px;
+  margin: 19px 0 32px;
+  padding-left: 8px;
+  width: 106px;
+  height: 22px;
   font-family: "SimploCapsDEMO-Regular", "Arial", Sans-serif;
   font-size: 28px;
   font-stretch: normal;
   line-height: 0.93;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: normal;
   color: #fff;
+  overflow: hidden;
 }
 
 a.logo span.online-logo {
@@ -105,6 +109,7 @@ a.logo span.online-logo {
   font-size: 21px;
   font-weight: 400;
   line-height: 26px;
+  text-transform: uppercase;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -115,6 +120,7 @@ a.logo span.online-logo {
   -ms-writing-mode: vertical-rl;
   -o-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
+  overflow: hidden;
 }
 /*
 
