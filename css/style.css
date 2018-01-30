@@ -24,6 +24,8 @@
   font-style: normal;
 }
 
+
+
 /* F I X E D  W I D T H */
 .work-area {
   width: 1280px;
@@ -43,18 +45,18 @@
 }
 
 nav.head-menu ul {
-  float: right;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  /*тут можно будет ещё немножко подкрутить на пиксель перфект*/
   margin-right: 150px;
 }
 
-nav.head-menu ul li {
-  display: inline-block;
-  margin-left: 20px;
-}
-
 nav.head-menu ul li a {
+  display: block;
+  padding: 0 1em;
   font-family: "SegoeWP-Light", "Arial", Sans-serif;
-  color:  #ddd;
+  color:  #fff;
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
@@ -62,9 +64,15 @@ nav.head-menu ul li a {
   text-decoration: none;
 }
 
-nav.head-menu ul li a:hover, nav.head-menu ul li a:active {
-  color: #fff;
+nav.head-menu ul li a:hover {
+  background-color: #333;
 }
+
+nav.head-menu ul li a:active {
+  color: #ccc;  
+}
+
+
 
 .head-main-bar {
   height: 112px;
@@ -169,3 +177,22 @@ header .head-main-bar .work-area form fieldset {
 }
 
 */
+
+
+
+@media all and (max-width: 800px) {
+  nav.head-menu ul {
+    justify-content: space-around;
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 500px) {
+  nav.head-menu ul {
+    flex-direction: column;
+  }
+  nav.head-menu ul li a {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
